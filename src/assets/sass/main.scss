@@ -700,6 +700,7 @@ body {
                 align-items: center;
                 flex-direction: row;
                 width: 100%;
+                flex-wrap: wrap;
                 padding-bottom: 30px;
             }
 
@@ -725,7 +726,7 @@ body {
         .row {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
 
             @media screen and (min-width:900px) {
                 // justify-content:space-evenly;
@@ -804,7 +805,7 @@ body {
 
             #about {
                 margin-bottom: 25px;
-                padding: 0 4rem;
+                // padding: 0 4rem;
             }
 
             #last-p {

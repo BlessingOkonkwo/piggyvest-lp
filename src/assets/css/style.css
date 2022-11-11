@@ -561,6 +561,7 @@ body .featured .row .column {
   align-items: center;
   flex-direction: row;
   width: 100%;
+  flex-wrap: wrap;
   padding-bottom: 30px;
 }
 @media screen and (min-width: 900px) {
@@ -576,7 +577,7 @@ body footer {
 body footer .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media screen and (min-width: 900px) {
   body footer .row .column {
@@ -646,7 +647,6 @@ body footer .about {
 }
 body footer .about #about {
   margin-bottom: 25px;
-  padding: 0 4rem;
 }
 body footer .about #last-p {
   color: #083e9e;

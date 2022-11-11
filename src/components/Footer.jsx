@@ -54,14 +54,17 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="about tac">
-                <p id="about">
-                    Piggyvest (formerly piggybank.ng) is the leading online savings & investing platform in Nigeria. For over 6 years, 
-                    our customers have saved and invested billions of Naira that they would normally be tempted to spend.
-                </p>
-                <p id="last-p" data-aos="flip-right" data-aos-duration="2000">
-                    2016 - 2022 PiggyTech Global Limited - RC 1405222
-                </p>
+
+            <div style={{width:'100%'}} className='dfc'>
+                <div className="about tac" style={{maxWidth:'700px'}}>
+                    <p id="about">
+                        Piggyvest (formerly piggybank.ng) is the leading online savings & investing platform in Nigeria. For over 6 years, 
+                        our customers have saved and invested billions of Naira that they would normally be tempted to spend.
+                    </p>
+                    <p id="last-p" data-aos="flip-right" data-aos-duration="2000">
+                        2016 - 2022 PiggyTech Global Limited - RC 1405222
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
