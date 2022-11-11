@@ -35,6 +35,12 @@ body header .nav1 {
     display: block;
   }
 }
+body header nav ul li > a {
+  transition: color 0.8s, text-decoration 0.8s;
+}
+body header nav ul li > a:hover {
+  color: #0D60D8;
+}
 body header nav .hamburger #bars:hover, body header nav .hamburger #x:hover {
   cursor: pointer;
 }

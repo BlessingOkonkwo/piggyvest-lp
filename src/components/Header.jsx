@@ -135,7 +135,7 @@ const Header = () => {
             <img src={Logo} alt="App Logo" className="logo" width="155px" />
         </a>
 
-        <div className="nav-div2" ref={nav_div} style={{paddingTop:0}}>
+        <div className="nav-div2" style={{paddingTop:0}}>
             <div className="nav-links2">
                 <ul>
                     <li id="save" onMouseOver={show}  onMouseOut={hide}>
