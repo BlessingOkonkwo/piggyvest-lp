@@ -727,6 +727,7 @@ body {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            margin-bottom: 30px;
 
             @media screen and (min-width:900px) {
                 // justify-content:space-evenly;
