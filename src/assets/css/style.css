@@ -544,6 +544,7 @@ body .featured .row {
 @media screen and (min-width: 900px) {
   body .featured .row {
     flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 body .featured .row a {
@@ -556,12 +557,6 @@ body .featured .row a div img {
   vertical-align: bottom;
 }
 body .featured .row .column {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  flex-wrap: wrap;
   padding-bottom: 30px;
 }
 @media screen and (min-width: 900px) {

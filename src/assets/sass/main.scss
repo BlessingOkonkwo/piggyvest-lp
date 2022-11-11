@@ -679,6 +679,7 @@ body {
 
             @media screen and (min-width:900px) {
                 flex-direction: row;
+                justify-content: space-evenly;
                 // justify-content: space-between;
             }
 
@@ -695,12 +696,12 @@ body {
             }
 
             .column {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row;
-                width: 100%;
-                flex-wrap: wrap;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // flex-direction: row;
+                // width: 100%;
+                // flex-wrap: wrap;
                 padding-bottom: 30px;
             }
 
