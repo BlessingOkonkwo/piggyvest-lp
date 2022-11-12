@@ -15,12 +15,14 @@ const Cards = () => {
     <section className="cards">
         <div className="container">
             <div className="row">
-                <div className="column four-ways" data-aos="fade-up" data-aos-duration="1000">
-                    <h4 style={{fontSize: '40px'}}>4 ways to build your savings</h4>
-                    <p>Earn 5%-15% when you save with any of these PiggyVest plans</p>
-                    <a href="https://dashboard.piggyvest.com/register" target="_blank" className="btn bold btn-bcb" rel="noreferrer">
-                        Start Saving
-                    </a>
+                <div className='four-ways-div'>
+                    <div className="column four-ways" data-aos="fade-up" data-aos-duration="1000">
+                        <h4 style={{fontSize: '40px'}}>4 ways to build your savings</h4>
+                        <p>Earn 5%-15% when you save with any of these PiggyVest plans</p>
+                        <a href="https://dashboard.piggyvest.com/register" target="_blank" className="btn bold btn-bcb" rel="noreferrer">
+                            Start Saving
+                        </a>
+                    </div>
                 </div>
 
                 <div className="column card" data-aos="fade-up" data-aos-duration="1000">

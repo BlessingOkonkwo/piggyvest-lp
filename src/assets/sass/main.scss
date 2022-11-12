@@ -239,8 +239,8 @@ body {
             position: relative;
     
             .rect {
-                position: relative;
-                left: 5%;
+                // position: relative;
+                // left: 5%;
             }
     
             .headerImg {
@@ -314,20 +314,24 @@ body {
             justify-content: center;
             align-items: center;
         }
-
-        .four-ways {
-            padding:0 15px; 
-            padding-bottom: 40px; 
-            margin:0 74px 30px;
-            max-width: 350px;
-
-            p {
-                margin: 18px 0 26px;
+        
+        .four-ways-div {
+            flex: 0 0 100%;
+            .four-ways {
+                padding:0 15px; 
+                padding-bottom: 40px; 
+                margin: 30px auto !important;
+                max-width: 350px;
+    
+                p {
+                    margin: 18px 0 26px;
+                }
             }
         }
+
         .card {
             background-color: #f9f9f9;
-            margin: 0 63px 45px;
+            margin: 30px auto !important;
             padding: 30px;
             border-radius: 20px;
             max-width: 350px;
@@ -492,7 +496,7 @@ body {
 
             a {
                 display: block;
-                margin: 45px 170px 0 170px;
+                margin: 45px auto 0 auto;
                 font-weight: 700;
 
                 @media screen and (min-width:900px) {
@@ -952,16 +956,22 @@ body {
         .cards {
 
             .row {
+
+                .four-ways-div {
+                    @media screen and (min-width: 1098px) {
+                        flex: none;
+                    }
+                }
                 .four-ways {
                     margin: 0 auto;
                     margin-left: 0;
-                    flex: 100%;
-                    max-width: initial;
+                    // flex: 100%;
+                    // max-width: initial;
 
                     @media screen and (min-width: 1098px) {
                         text-align: left;
-                        max-width: 350px;
-                        flex: none;
+                        // max-width: 350px;
+                        // flex: none;
                     }
                 }
 

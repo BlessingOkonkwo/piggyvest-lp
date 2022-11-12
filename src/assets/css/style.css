@@ -192,10 +192,6 @@ body .top-sec .top-div .btns, body .top-sec .top-div p {
 body .top-sec .img-group {
   position: relative;
 }
-body .top-sec .img-group .rect {
-  position: relative;
-  left: 5%;
-}
 body .top-sec .img-group .headerImg {
   position: absolute;
   top: 38px;
@@ -255,18 +251,21 @@ body .cards .row {
   justify-content: center;
   align-items: center;
 }
-body .cards .four-ways {
+body .cards .four-ways-div {
+  flex: 0 0 100%;
+}
+body .cards .four-ways-div .four-ways {
   padding: 0 15px;
   padding-bottom: 40px;
-  margin: 0 74px 30px;
+  margin: 30px auto !important;
   max-width: 350px;
 }
-body .cards .four-ways p {
+body .cards .four-ways-div .four-ways p {
   margin: 18px 0 26px;
 }
 body .cards .card {
   background-color: #f9f9f9;
-  margin: 0 63px 45px;
+  margin: 30px auto !important;
   padding: 30px;
   border-radius: 20px;
   max-width: 350px;
@@ -416,7 +415,7 @@ body .saver #blue p {
 }
 body .saver #blue a {
   display: block;
-  margin: 45px 170px 0 170px;
+  margin: 45px auto 0 auto;
   font-weight: 700;
 }
 @media screen and (min-width: 900px) {
@@ -792,18 +791,21 @@ body .tac {
   body .security .security-text {
     text-align: left;
   }
+}
+@media screen and (min-width: 900px) and (min-width: 1098px) {
+  body .cards .row .four-ways-div {
+    flex: none;
+  }
+}
+@media screen and (min-width: 900px) {
   body .cards .row .four-ways {
     margin: 0 auto;
     margin-left: 0;
-    flex: 100%;
-    max-width: initial;
   }
 }
 @media screen and (min-width: 900px) and (min-width: 1098px) {
   body .cards .row .four-ways {
     text-align: left;
-    max-width: 350px;
-    flex: none;
   }
 }
 @media screen and (min-width: 900px) {
