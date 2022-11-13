@@ -289,6 +289,10 @@ body .cards .card a div img {
   top: 10px;
   margin-right: 8px;
 }
+body .blue-content {
+  width: 500px;
+  display: block;
+}
 body .investify {
   text-align: center;
   padding: 20px 16px 90px;
@@ -819,6 +823,7 @@ body .tac {
 @media screen and (min-width: 900px) {
   body .blue-content {
     margin-right: 28%;
+    margin-left: auto !important;
   }
 }
 

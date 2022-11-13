@@ -364,6 +364,11 @@ body {
         }
     }
 
+    .blue-content {
+        width: 500px;
+        display: block;
+    }
+
     .investify {
         text-align: center;
         padding: 20px 16px 90px;
@@ -986,6 +991,7 @@ body {
 
         .blue-content {
             margin-right: 28%;
+            margin-left: auto !important;
         }
 
     }

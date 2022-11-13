@@ -5,7 +5,7 @@ import arrow5 from '../assets/imgs/arrow5.svg'
 const Saver = () => {
   return (
     <section className="saver">
-        <div id="blue" data-aos="zoom-in" data-aos-duration="2000">
+        <div id="blue" data-aos="zoom-in" data-aos-duration="2000" className='dfc'>
             <div className="blue-content">
                 <h2>Meet the saver of the month!</h2>
                 <p>
