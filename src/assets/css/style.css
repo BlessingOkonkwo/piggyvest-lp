@@ -290,7 +290,7 @@ body .cards .card a div img {
   margin-right: 8px;
 }
 body .blue-content {
-  width: 500px;
+  max-width: 500px;
   display: block;
 }
 body .investify {
