@@ -15,6 +15,7 @@ const Header = () => {
     const bars = useRef(null)
     const x = useRef(null)
     const hover_dd = useRef(null)
+    const hover_dd2 = useRef(null)
 
 
   
@@ -27,24 +28,18 @@ const Header = () => {
         hover_dd.current.classList.add("dn");
     };
 
-   
-
-    const showNav = () =>{
-        if (display_nav === true) {
-            nav_div.current.classList.remove("dn");
-            bars.current.classList.add("dn");
-            x.current.classList.remove("dn");
-            setDisplay(!display_nav)
-        }else {
-            nav_div.current.classList.add("dn");
-            x.current.classList.add("dn");
-            bars.current.classList.remove("dn");
-            setDisplay(!display_nav)
-
-        }
+    const show2 = () => {
+        hover_dd2.current.classList.remove("dn");
+        hover_dd2.current.classList.add("df");
+    }
+    const hide2 = () => {
+        hover_dd2.current.classList.remove("df");
+        hover_dd2.current.classList.add("dn");
     };
 
-    const hideNav = () =>{
+   
+
+    const toggleNav = () =>{
         if (display_nav === true) {
             nav_div.current.classList.remove("dn");
             bars.current.classList.add("dn");
@@ -67,8 +62,8 @@ const Header = () => {
         </a>
 
         <div className="hamburger" style={{marginLeft: '10px'}}>
-            <FontAwesomeIcon icon={faBars} size="2x" style={{position: 'absolute', top: 0, right: 0}} onClick={showNav} ref={bars} id="bars" />
-            <FontAwesomeIcon icon={faXmark} size="2x" style={{position: 'absolute', top: 0, right: 0}} className="dn" onClick={hideNav} ref={x} id="x" />
+            <FontAwesomeIcon icon={faBars} size="2x" style={{position: 'absolute', top: 0, right: 0}} onClick={toggleNav} ref={bars} id="bars" />
+            <FontAwesomeIcon icon={faXmark} size="2x" style={{position: 'absolute', top: 0, right: 0}} className="dn" onClick={toggleNav} ref={x} id="x" />
         </div>
 
         <div className="dn nav-div" ref={nav_div}>
@@ -138,9 +133,9 @@ const Header = () => {
         <div className="nav-div2" style={{paddingTop:0}}>
             <div className="nav-links2">
                 <ul>
-                    <li id="save" onMouseOver={show}  onMouseOut={hide}>
+                    <li id="save" onMouseOver={show2}  onMouseOut={hide2}>
                         <a href="/#save">Save</a>
-                        <div id="hover-dd" ref={hover_dd} className="hover-dd dn">
+                        <div id="hover-dd2" ref={hover_dd2} className="hover-dd dn">
                             <a href="https://piggyvest.com/piggybank">
                                 <img src={cardIcon1} width="25px" alt="" />
                                 Piggybank
